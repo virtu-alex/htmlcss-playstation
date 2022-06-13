@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 100px;
+}
+
+[class^="col"]{
+    min-height: 80px;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+header {
+    background-color: rgb(158, 70, 70);
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100px;
+    box-shadow: 0px 2px 10px grey;
+    padding: 0 50px;
+}
