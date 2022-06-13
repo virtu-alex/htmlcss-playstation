@@ -29,6 +29,10 @@ section.middle-jumbotron{
     height: 50px;
 }
 
+header img{
+    width: 80px;
+}
+
 header {
     background-color: rgb(158, 70, 70);
     z-index: 1;
