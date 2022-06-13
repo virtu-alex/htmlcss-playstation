@@ -46,6 +46,7 @@ section.ps-plus{
 }
 
 section.ps-now{
+    min-height: 200px;
     background-color: #161C3B;
 }
 
