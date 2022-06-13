@@ -9,9 +9,19 @@ body{
 }
 
 [class^="col"]{
-    min-height: 80px;
-    background-color: lightblue;
+    min-height: 70px;
     border: 1px solid black;
+}
+
+section.top-jumbotron{
+    width: 100%;
+    padding-top: 250px;
+    height: 700px;
+    background-color: green;
+}
+
+.top-header{
+    height: 50px;
 }
 
 header {
