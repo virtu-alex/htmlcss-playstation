@@ -27,39 +27,51 @@
 
     <header>
         <div class="top-header text-end p-2">
-            <img src="img/sony_logo.svg" alt="">
+            <img id="sony-logo" src="img/sony_logo.svg" alt="">
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
-            
-            <a class="navbar-brand" href="#">
+        <nav class="navbar vw100 navbar-expand-lg navbar-light bg-light justify-content-between align-items-center">
+            <a class="navbar-brand d-flex align-items-center " href="#">
                 <img src="img/play_logo.svg" alt="">
+                <h5 class="px-3 d-none d-lg-flex">Giochi</h5>
+                <img class="d-none d-lg-flex" id="chevron" src="img/chevron-down-solid.svg" alt="">
+                <h5 class="px-3 d-none d-lg-flex">Hardware</h5>
+                <img class="d-none d-lg-flex" id="chevron" src="img/chevron-down-solid.svg" alt="">
+                <h5 class="px-3 d-none d-lg-flex">Servizi</h5>
+                <img class="d-none d-lg-flex" id="chevron" src="img/chevron-down-solid.svg" alt="">
+                <h5 class="px-3 d-none d-lg-flex">Novit&aacute;</h5>
+                <img class="d-none d-lg-flex" id="chevron" src="img/chevron-down-solid.svg" alt="">
+                <h5 class="px-3 d-none d-lg-flex">Fai acquisti</h5>
+                <img class="d-none d-lg-flex" id="chevron" src="img/chevron-down-solid.svg" alt="">
+                <h5 class="px-3 d-none d-lg-flex">Supporto</h5>
+                <img class="d-none d-lg-flex" id="chevron" src="img/chevron-down-solid.svg" alt="">
             </a>
-            
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown link
+                        <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="">
+                            My PlayStation
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#"><img src="img/play-menu-ico.png" alt=""><span>Account
+                                    Services</span></a>
+                            <a class="dropdown-item" href="#"><img src="img/play_logo.svg" alt=""><span>Acquisti
+                                    recenti</span></a>
+                            <a class="dropdown-item" href="#"><img src="img/play-menu-ico.png" alt=""><span>I Tuoi
+                                    Giochi</span></a>
+                            <a class="dropdown-item" href="#"><img src="img/play_logo.svg" alt=""><span>Impostazioni
+                                    sicurezza</span></a>
                         </div>
+                    </li>
+                    <li class="nav-item px-3">
+                        <button type="button" class="btn rounded-5 bg-dark text-white">Accedi</button>
+                    </li>
+                    <li class="nav-item px-2">
+                        <img id="lente" src="img/lens.svg" alt="">
                     </li>
                 </ul>
             </div>
@@ -73,14 +85,14 @@
         <section class="top-jumbotron jumbotron-fluid">
             <div class="container h-100">
                 <div class="row h-100 py-5 flex-lg-column">
-                    <div class="col-8 col-lg-3 py-4"><img class="w-100" src="img/returnal-hero-banner-logo.png" alt="">
+                    <div class="col-8 col-lg-3 py-4">
+                        <img class="w-100" src="img/returnal-hero-banner-logo.png" alt="">
                     </div>
                     <div class="col-12 col-lg-5">
                         <h1>Rompi il cerchio</h1>
                         <p class="fw-bold py-4">Rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni
-                            rinascita
-                            inquesto esplosivo thriller fantascientifico disponibile in esclusiva su PS5.</p>
-                        <button type="button" class="btn btn-danger rounded-5">Acquista ora</button>
+                            rinascita in questo esplosivo thriller fantascientifico disponibile in esclusiva su PS5.</p>
+                        <button type="button" class="btn btn-jumbo rounded-5">Acquista ora</button>
                     </div>
                 </div>
             </div>
@@ -91,18 +103,27 @@
         <section class="game-cards">
             <div class="container mt-4 mb-5">
                 <div class="row">
-                    <div class="col-6 col-sm-4 col-lg py-2"><img class="rounded-4"
-                            src="img/returnal-listing-thumb-01-ps5.jpg" alt="returnal GOTY"></div>
-                    <div class="col-6 col-sm-4 col-lg py-2"><img class=" rounded-4"
-                            src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="Rachet & Clank!"></div>
-                    <div class="col-6 col-sm-4 col-lg py-2"><img class=" rounded-4"
-                            src="img/returnal-listing-thumb-01-ps5.jpg" alt="returnal GOTY"></div>
-                    <div class="col-6 col-sm-4 col-lg py-2"><img class=" rounded-4"
-                            src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="Rachet & Clank!"></div>
-                    <div class="col-6 col-sm-4 col-lg py-2"><img class=" rounded-4"
-                            src="img/returnal-listing-thumb-01-ps5.jpg" alt="returnal GOTY"></div>
-                    <div class="col-6 col-sm-4 col-lg py-2"><img class=" rounded-4"
-                            src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="Rachet & Clank!"></div>
+                    <div class="col-6 col-sm-4 col-lg py-2">
+                        <img class="lift rounded-4" src="img/returnal-listing-thumb-01-ps5.jpg" alt="returnal GOTY">
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg py-2">
+                        <img class="lift  rounded-4" src="img/ratchet-and-clank-rift-apart-keyart.jpg"
+                            alt="Rachet & Clank!">
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg py-2">
+                        <img class="lift  rounded-4" src="img/returnal-listing-thumb-01-ps5.jpg" alt="returnal GOTY">
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg py-2">
+                        <img class="lift  rounded-4" src="img/ratchet-and-clank-rift-apart-keyart.jpg"
+                            alt="Rachet & Clank!">
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg py-2">
+                        <img class="lift  rounded-4" src="img/returnal-listing-thumb-01-ps5.jpg" alt="returnal GOTY">
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg py-2">
+                        <img class="lift  rounded-4" src="img/ratchet-and-clank-rift-apart-keyart.jpg"
+                            alt="Rachet & Clank!">
+                    </div>
                 </div>
             </div>
         </section>
@@ -115,34 +136,44 @@
                     <div class="col-12 text-center">
                         <h5 class="text-primary text-uppercase m-0">Play has no limits</h5>
                         <h2>Ecco la playStation 5</h2>
-                        <p class="py-4 text-secondary">Tuffati in nuove possibilit&agrave; di gioco
-                            completamente inaspettate</p>
+                        <p class="py-4 text-secondary">
+                            Tuffati in nuove possibilit&agrave; di gioco
+                            completamente inaspettate
+                        </p>
                     </div>
                     <div class="col-12 col-md-5 mb-3">
                         <h2>Console PlayStation 5</h2>
-                        <p class="py-2 text-secondary">Sperimenta la nuova generazione di incredibili giochi
-                            PlayStaion.</p>
+                        <p class="py-2 text-secondary">
+                            Sperimenta la nuova generazione di incredibili giochi
+                            PlayStaion.
+                        </p>
                         <button type="button" class="btn btn-primary rounded-4">Maggiori informazioni</button>
                     </div>
-                    <div class="col-12 col-md-7">
+                    <!-- BIG CONSOLE PS5 PIC -->
+                    <div class="col-12 col-md-7 ">
                         <img src="img/playstation-5-thumb.png" alt="playstation 5">
                     </div>
+                    <!-- SMALL CONSOLE PS5 PIC -->
                     <div class="col-4 col-md overlay half-visible text-center">
                         <img src="img/playstation-5-thumb.png" alt="playstation 5">
                         <span> Console PS5</span>
                     </div>
+                    <!-- JOYPAD PS5 -->
                     <div class="col-4 col-md overlay half-visible text-center">
                         <img src="img/joypad-thumb.png" alt="joypad">
                         <span> Controller wireless<br>DualSense&trade;</span>
                     </div>
+                    <!-- HEADSET PS5 -->
                     <div class="col-4 col-md overlay half-visible text-center">
                         <img src="img/headset-thumb.png" alt="headset">
                         <span> Cuffie wireless con microfono PULSE 3&trade;</span>
                     </div>
+                    <!-- REMOTE CONTROLLER -->
                     <div class="col-4 col-md overlay half-visible text-center">
                         <img src="img/remote-thumb.png" alt="remote controller">
                         <span>Telecomando Media</span>
                     </div>
+                    <!-- TELECAMERA HD -->
                     <div class="col-4 col-md overlay half-visible text-center">
                         <img src="img/camera-thumb.jpg" alt="photographic camera">
                         <span>Telecamera HD</span>
@@ -163,9 +194,9 @@
                         <h1>Un'avventura cooperativa selvaggia ti attende</h1>
                         <p>
                             Trova un amico e partite insieme per l'avventura pi&ugrave; folle delle vostre vite in It
-                            Takes Tow, un gioco d'avventura cooperativa a piattaforme che stravolge il suo genere
+                            Takes Two, un gioco d'avventura cooperativa a piattaforme che stravolge il suo genere
                         </p>
-                        <button type="button" class="btn btn-danger rounded-5">Acquista ora</button>
+                        <button type="button" class="btn btn-jumbo rounded-5">Acquista ora</button>
                     </div>
                 </div>
             </div>
@@ -333,11 +364,11 @@
 
         <!-- PLAYSTATION NOW SECTION -->
 
-        <section class="ps-now mt-3">
-            <div class="container h-100">
-                <div class="row h-100 text-white">
-                    <div class="col-12 py-5 col-md-7">
-                        <img src="img/ps-now-logo-two-column.png" alt="">
+        <section class="ps-now h-100 mt-3">
+            <div class="container">
+                <div class="row text-white align-items-center">
+                    <div class="col-12 h-100 col-md-7">
+                        <img class="py-2" src="img/ps-now-logo-two-column.png" alt="">
                         <p>
                             Ottieni l'accesso immediato a una vastissima raccolta di oltre 800 giochi per PS4, PS3 e PS2
                             su PS4 o PC Windows, con nuovi titoli aggiunti ogni mese.
@@ -386,7 +417,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="col-12 py-5 col-md-6 d-md-flex justify-content-between">
+                <div class="col-12 py-5 col-lg-6 d-md-flex justify-content-between">
                     <ul>
                         <li><a href="#">Link footer</a></li>
                         <li><a href="#">Link footer</a></li>
