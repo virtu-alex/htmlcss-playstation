@@ -26,56 +26,129 @@
     <!-- HEADER -->
 
     <header>
-        <div class="top-header text-end p-2">
+        <!-- TOP HEADER SONY -->
+        <div class="top-header h-25 text-end p-1">
             <img id="sony-logo" src="img/sony_logo.svg" alt="">
         </div>
-        <nav class="navbar vw100 navbar-expand-lg navbar-light bg-light justify-content-between align-items-center">
-            <a class="navbar-brand d-flex align-items-center " href="#">
-                <img src="img/play_logo.svg" alt="">
-                <h5 class="px-3 d-none d-lg-flex">Giochi</h5>
-                <img class="d-none d-lg-flex" id="chevron" src="img/chevron-down-solid.svg" alt="">
-                <h5 class="px-3 d-none d-lg-flex">Hardware</h5>
-                <img class="d-none d-lg-flex" id="chevron" src="img/chevron-down-solid.svg" alt="">
-                <h5 class="px-3 d-none d-lg-flex">Servizi</h5>
-                <img class="d-none d-lg-flex" id="chevron" src="img/chevron-down-solid.svg" alt="">
-                <h5 class="px-3 d-none d-lg-flex">Novit&aacute;</h5>
-                <img class="d-none d-lg-flex" id="chevron" src="img/chevron-down-solid.svg" alt="">
-                <h5 class="px-3 d-none d-lg-flex">Fai acquisti</h5>
-                <img class="d-none d-lg-flex" id="chevron" src="img/chevron-down-solid.svg" alt="">
-                <h5 class="px-3 d-none d-lg-flex">Supporto</h5>
-                <img class="d-none d-lg-flex" id="chevron" src="img/chevron-down-solid.svg" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdownMenuLink"
-                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="">
-                            My PlayStation
+        <!-- BOTTOM HEADER -->
+        <div class="container-fluid h-75 bg-white">
+            <div class="row h-100 align-items-center">
+                <div class="col-8 d-flex align-items-center">
+                    <div>
+                        <img class="playlogo" src="img/play_logo.svg" alt="">
+                    </div>
+                    <!-- DROPDOWN GIOCHI -->
+                    <div class="dropdown d-none d-lg-block">
+                        <a class="btn dropdown-toggle border-0 text-black" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>Giochi</span>
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#"><img src="img/play-menu-ico.png" alt=""><span>Account
-                                    Services</span></a>
-                            <a class="dropdown-item" href="#"><img src="img/play_logo.svg" alt=""><span>Acquisti
-                                    recenti</span></a>
-                            <a class="dropdown-item" href="#"><img src="img/play-menu-ico.png" alt=""><span>I Tuoi
-                                    Giochi</span></a>
-                            <a class="dropdown-item" href="#"><img src="img/play_logo.svg" alt=""><span>Impostazioni
-                                    sicurezza</span></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#"><img src="img/returnal-listing-thumb-01-ps5.jpg"
+                                    alt=""><span class="px-2">Gioca ora a Returnal GOTY!</span></a>
+                            <a class="dropdown-item" href="#"><img
+                                    src="img/crash-bandicoot-4-its-about-time-store-art.jpg" alt=""><span
+                                    class="px-2">Gioca ora a Crash Bandicoot 4!</span></a>
+                            <a class="dropdown-item" href="#"><img src="img/ratchet-and-clank-rift-apart-keyart.jpg"
+                                    alt=""><span class="px-2">Gioca ora a Ratchet & Clank!</span></a>
                         </div>
-                    </li>
-                    <li class="nav-item px-3">
-                        <button type="button" class="btn rounded-5 bg-dark text-white">Accedi</button>
-                    </li>
-                    <li class="nav-item px-2">
+                    </div>
+                    <!-- DROPDOWN HARDWARES -->
+                    <div class="dropdown d-none d-lg-block">
+                        <a class="btn dropdown-toggle border-0 text-black" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>Hardware</span>
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#"><img src="img/ps4-slim-homepage-image-block.jpg"
+                                    alt=""><span class="px-2">Acuista la tua PlayStation 4</span></a>
+                            <a class="dropdown-item" href="#"><img src="img/playstation-5-thumb.png" alt=""><span
+                                    class="px-2">Acquista la tua PlayStation 5</span></a>
+                            <a class="dropdown-item" href="#"><img src="img/double11-202010-tw-psvr.jpg" alt=""><span
+                                    class="px-2">Entra anche tu nella realt&aacute; virtuale</span></a>
+                        </div>
+                    </div>
+                    <!-- DROPDOWN SERVICES -->
+                    <div class="dropdown d-none d-lg-block">
+                        <a class="btn dropdown-toggle border-0 text-black" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>Servizi</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#"><img src="img/play_logo.svg" alt=""><span>Partecipa a questa grande community</span></a>
+                            <a class="dropdown-item" href="#"><img class="bg-black" src="img/play-menu-ico.png" alt=""><span>Collega le tue console in un unico Cloud</span></a>
+                        </div>
+                    </div>
+                    <!-- DROPDOWN NEWS -->
+                    <div class="dropdown d-none d-lg-block">
+                        <a class="btn dropdown-toggle border-0 text-black" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>Novit&aacute;</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#"><img src="img/play_logo.svg" alt=""><span>Questo mese su Play Station</span></a>
+                            <a class="dropdown-item" href="#"><img class="bg-black" src="img/play-menu-ico.png" alt=""><span>PS BLOG</span></a>
+                        </div>
+                    </div>
+                    <!-- DROPDOWN WANT TO BUY -->
+                    <div class="dropdown d-none d-lg-block">
+                        <a class="btn dropdown-toggle border-0 text-black" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>Fai acquisti</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#"><img src="img/play_logo.svg" alt=""><span>Digital Games and services</span></a>
+                            <a class="dropdown-item" href="#"><img class="bg-black" src="img/play-menu-ico.png" alt=""><span>PS Gear</span></a>
+                        </div>
+                    </div>
+                    <!-- DROPDOWN SUPPORT -->
+                    <div class="dropdown d-none d-lg-block">
+                        <a class="btn dropdown-toggle border-0 text-black" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>Supporto</span>
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#"><img src="img/play_logo.svg" alt=""><span>Supporto</span></a>
+                            <a class="dropdown-item" href="#"><img class="bg-black" src="img/play-menu-ico.png" alt=""><span>Stato del PSN</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- DROPDOWN ACCOUNT SECTION -->
+                <div class="col-4 d-flex justify-content-end align-items-center ">
+                    <div class="dropdown d-none d-lg-block">
+                        <a class="btn dropdown-toggle border-0 text-black" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            My Play Station
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#"><i class="fa-solid fa-user"></i><span class="px-2">Account</span></a>
+                            <a class="dropdown-item" href="#"><i class="fa-solid fa-people-roof"></i><span class="px-2">Family Share</span></a>
+                            <a class="dropdown-item" href="#"><i class="fa-brands fa-battle-net"></i><span class="px-2">Battle.net</span></a>
+                            <a class="dropdown-item" href="#"><i class="fa-brands fa-steam"></i><span class="px-2">Steam</span></a>
+                            <a class="dropdown-item" href="#"><i class="fa-brands fa-wizards-of-the-coast"></i><span class="px-2">Magic: The Gathering</span></a>
+                        </div>
+                    </div>
+                    <!-- ACCESS BUTTON -->
+                    <div class="px-3 d-none d-lg-block">
+                        <button type="button" class="btn bg-dark text-white rounded-5">Accedi</button>
+                    </div>
+                    <!-- LENTE RICERCA -->
+                    <div class="text-black d-none d-lg-block">
                         <img id="lente" src="img/lens.svg" alt="">
-                    </li>
-                </ul>
+                    </div>
+                    <div>
+                        <button class="navbar-toggler toggler-example text-black d-lg-none" type="button"
+                            data-toggle="collapse" data-target="#navbarSupportedContent1"
+                            aria-controls="navbarSupportedContent1" aria-expanded="false"
+                            aria-label="Toggle navigation"><span class="dark-blue-text"><i
+                                    class="fas fa-bars fa-2x"></i></span></button>
+                    </div>
+                </div>
             </div>
-        </nav>
+        </div>
     </header>
 
     <main>
