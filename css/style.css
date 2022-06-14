@@ -65,9 +65,9 @@ section.nolimits {
     margin-top: 100px;
 }
 
-section.nolimits img:active{
+section.nolimits .overlay:active{
     filter: opacity(1);
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid blue;
 }
 
 .half-visible {
