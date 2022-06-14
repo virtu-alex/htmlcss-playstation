@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3ec4a20eeb.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -21,7 +30,11 @@
             <img src="img/sony_logo.svg" alt="">
         </div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
-            <a class="navbar-brand" href="#"><img src="img/play_logo.svg" alt=""></a>
+            
+            <a class="navbar-brand" href="#">
+                <img src="img/play_logo.svg" alt="">
+            </a>
+            
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,7 +42,7 @@
             <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Features</a>
@@ -57,7 +70,7 @@
 
         <!-- TOP JUMBOTRON SECTION -->
 
-        <section class="top-jumbotron">
+        <section class="top-jumbotron jumbotron-fluid">
             <div class="container h-100">
                 <div class="row h-100 py-5 flex-lg-column">
                     <div class="col-8 col-lg-3 py-4"><img class="w-100" src="img/returnal-hero-banner-logo.png" alt="">
@@ -98,7 +111,7 @@
 
         <section class="nolimits">
             <div class="container mt-5 mb-5">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-12 text-center">
                         <h5 class="text-primary text-uppercase m-0">Play has no limits</h5>
                         <h2>Ecco la playStation 5</h2>
@@ -135,7 +148,7 @@
 
         <!-- JUMBOTRON IT TAKES TWO SECTION -->
 
-        <section class="middle-jumbotron">
+        <section class="middle-jumbotron jumbotron-fluid">
             <div class="container h-100">
                 <div class="row h-100 py-3 flex-lg-column">
                     <div class="col-7 py-2 col-lg-3">
@@ -244,7 +257,7 @@
                         <h2>
                             PlayStation VR
                         </h2>
-                        <p>
+                        <p style="line-height:1.6">
                             Oltre 500 titoli ed esperienza di gioco. Scoprili tutti.
                         </p>
                         <button type="button" class="btn btn-primary rounded-5">Scopri di pi&ugrave;</button>
@@ -266,10 +279,10 @@
         <!-- PS PLUS SECTION -->
 
         <section class="ps-plus mt-4">
-            <div class="container">
-                <div class="row py-5">
-                    <div class="col-12 col-md-6">
-                        <img class="py-3" src="img/ps-plus-logo.png" alt="PS plus logo">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12 col-md-7 py-3">
+                        <img class="ps-plus-logo py-3" src="img/ps-plus-logo.png" alt="PS plus logo">
                         <p>
                             Migliora la tua esperienza PlayStation con l'accesso a multigiocatore online, giochi
                             mensili, sconti esclusivi e altro ancora.
@@ -277,7 +290,9 @@
                         <button type="button" class="btn btn-primary rounded-5 border-0"><a href="">Esplora PlayStation
                                 Plus</a></button>
                     </div>
-                    <div class="col-md-6 d-none d-md-block">img appare im md</div>
+                    <div class="col-md-5 d-none d-md-block h-100">
+                        <img class="h-100" src="img/ps-plus-april-monthly-games-featured-image-block.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
@@ -314,9 +329,9 @@
         <!-- PLAYSTATION NOW SECTION -->
 
         <section class="ps-now mt-3">
-            <div class="container">
-                <div class="row text-white">
-                    <div class="col-12 py-5 col-md-6">
+            <div class="container h-100">
+                <div class="row h-100 text-white">
+                    <div class="col-12 py-5 col-md-7">
                         <img src="img/ps-now-logo-two-column.png" alt="">
                         <p>
                             Ottieni l'accesso immediato a una vastissima raccolta di oltre 800 giochi per PS4, PS3 e PS2
@@ -325,7 +340,9 @@
                         <button type="button" class="btn btn-light rounded-5"><a class="text-black" href="">Esplora
                                 PlayStation Now</a></button>
                     </div>
-                    <div class="col-md-6 d-none d-md-block">img appare im md</div>
+                    <div class="col-md-5 d-none d-md-block h-100">
+                        <img class="h-100 w-100" src="img/ps-now-april-featured-image-block.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
@@ -339,11 +356,11 @@
                         <h2>Seguici sui social media</h2>
                     </div>
                 </div>
-                <div class="row mt-3">
-                    <div class="col-6 col-sm-3"><img class="py-4" src="img/twitter.jpg" alt=""></div>
-                    <div class="col-6 col-sm-3"><img class="py-4" src="img/facebook.jpg" alt=""></div>
-                    <div class="col-6 col-sm-3"><img class="py-4" src="img/instagram.jpg" alt=""></div>
-                    <div class="col-6 col-sm-3"><img class="py-4" src="img/youtube.png" alt=""></div>
+                <div class="row mt-3 justify-content-center">
+                    <div class="col-6 col-sm-3 col-md-2"><img class="py-4" src="img/twitter.jpg" alt=""></div>
+                    <div class="col-6 col-sm-3 col-md-2"><img class="py-4" src="img/facebook.jpg" alt=""></div>
+                    <div class="col-6 col-sm-3 col-md-2"><img class="py-4" src="img/instagram.jpg" alt=""></div>
+                    <div class="col-6 col-sm-3 col-md-2"><img class="py-4" src="img/youtube.png" alt=""></div>
                 </div>
             </div>
         </section>
@@ -357,7 +374,8 @@
                 <div class="col-12">
                     <img class="ps-logo py-5" src="img/ps-footer.svg" alt="">
                     <div>
-                        <i class="fa-solid fa-globe"></i>
+                        <i class="fa-solid fa-globe">
+                        </i>
                         <span class="px-2">
                             Country / Region: Italy
                         </span>
@@ -387,7 +405,7 @@
                     </ul>
                 </div>
                 <div class="col-12">
-                    <img class="sie-logo" src="img/sie-logo.svg" alt="">
+                    <img class="sie-logo py-4" src="img/sie-logo.svg" alt="">
                     <p>
                         Website &copy;2021 Sony Interactive Entertainment Europe Limited. Tutti i contenuti, nomi dei
                         giochi, nomi commerciali e/o di abbigliamento, marchi registrati, grafica e immagini associati
