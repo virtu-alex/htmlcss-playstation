@@ -36,7 +36,6 @@ header {
     left: 0;
     top: 0;
     right: 0;
-    height: 100px;
     box-shadow: 0px 2px 5px grey;
 }
 
@@ -155,7 +154,6 @@ section .btn:hover {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    min-height: 650px;
 }
 
 #middle-jumbotron h1 {
@@ -193,7 +191,6 @@ section .btn:hover {
 
 #ps-plus {
     background-color: #BEBCBB;
-    height: 300px;
 }
 
 #ps-plus .ps-plus-logo {
@@ -220,14 +217,9 @@ section .btn:hover {
 
 #ps-now {
     background-color: #161C3B;
-    height: 300px;
 }
 
 /* *--SOCIAL SECTION--* */
-
-#social{
-    height: 350px;
-}
 
 .r2{
     font-size: 2rem;
