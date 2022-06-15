@@ -1,33 +1,30 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
+/* *--GENERICS--* */
 
 body {
-    padding-top: 130px;
+    padding-top: 100px;
 }
 
 img {
     width: 100%;
 }
 
-nav {
-}
-
 a {
     text-decoration: none;
 }
 
-#sony-logo {
-    width: 75px;
+ul {
+    list-style: none;
 }
 
-.playlogo{
-    width: 70px;
+footer a {
+    color: white;
 }
 
-.top-header{
+
+/* *--HEADER--* */
+
+.top-header {
     height: 40px;
 }
 
@@ -39,43 +36,59 @@ header {
     left: 0;
     top: 0;
     right: 0;
-    height: 130px;
+    height: 100px;
     box-shadow: 0px 2px 5px grey;
 }
 
-#lente{
+/* *--HEADER IMAGES--* */
+
+#sony-logo {
+    width: 75px;
+}
+
+.playlogo {
+    width: 70px;
+}
+
+#lente {
     height: 30px;
+    cursor: pointer;
 }
 
-/* MICRO CORRECTIONS */
-
-.dropdown-toggle::after{
-    transform: translateY(3px);
-}
-
-ul {
-    list-style: none;
-}
-
-footer a {
-    color: white;
-}
-
-.dropdown-menu img{
+.dropdown-menu img {
     width: 120px;
     height: 100px;
 }
 
-.dropdown-menu{
+header a:hover {
+    filter: opacity(.7);
 }
 
-.top-jumbotron {
+#access:hover {
+    outline: 2px solid rgb(255, 255, 255);
+    outline-offset: -5px;
+    transition: all 300ms linear;
+}
+
+/* *--MICRO CORRECTION ON DROPDOWN TOGGLE--* */
+
+.dropdown-toggle::after {
+    transform: translateY(3px);
+}
+
+/* *--RETURNAL JUMBO--* */
+
+#top-jumbotron {
     padding-top: 200px;
-    background: url(/img/jumbo-bg.png);
+    background: url(../img/jumbo-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+}
+
+#top-jumbotron h1 {
+    font-size: 2.5rem;
 }
 
 .btn-jumbo {
@@ -83,119 +96,145 @@ footer a {
     color: white;
 }
 
+/* *--GENERICS FOR BUTTONS AND HOVER EFFECTS--* */
+
 section .btn:hover {
     outline: 2px solid rgb(255, 255, 255);
     outline-offset: -5px;
     transition: all 300ms linear;
 }
 
-.lift:hover {
-    transform: translateY(-20px);
-    transition: all 300ms ease-out;
-}
-
-.nolimits p {
-    font-size: 1.2rem;
+#nolimits .btn {
     font-weight: 500;
 }
 
-.nolimits h2 {
-    font-size: 2.8rem;
+#ps-plus .btn {
+    background-color: #D9DADC;
+    color: #2D64E5;
+    font-weight: 500;
 }
 
-section.nolimits {
-    margin-top: 100px;
-}
-
-section.nolimits .overlay:hover {
-    filter: opacity(1);
-    border-bottom: 1px solid blue;
-}
+/* *--OVERLAY EFFECT ON HOVER--* */
 
 .half-visible {
     filter: opacity(.6);
 }
 
-section.nolimits .btn {
+#nolimits .overlay:hover {
+    filter: opacity(1);
+    border-bottom: 1px solid blue;
+}
+
+/* *--HOVER EFFECT ON CARD BELOW MAIN JUMBOTRON--* */
+
+.lift:hover {
+    transform: translateY(-20px);
+    transition: all 300ms ease-out;
+}
+
+/* *--NO LIMITS SECTION--* */
+
+#nolimits p {
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
-.top-jumbotron h1 {
-    font-size: 2.5rem;
+#nolimits h2 {
+    font-size: 2.8rem;
 }
 
-section.middle-jumbotron {
-    background: url(/img/it-takes-two-hero-banner-desktop.jpg);
+#nolimits {
+    margin-top: 100px;
+}
+
+/* *--MIDDLE JUMBOTRON-- // IT TAKES TWO //* */
+
+#middle-jumbotron {
+    background: url(../img/it-takes-two-hero-banner-desktop.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+    min-height: 650px;
 }
 
-section.middle-jumbotron h1 {
+#middle-jumbotron h1 {
     font-size: 2.5rem;
 }
 
-section.new-games p {
+/* *--NEW GAMES SECTION--* */
+
+#new-games p {
     font-size: 1.7rem;
 }
 
-section.new-games span {
+#new-games span {
     font-size: 1.2rem;
 }
 
-section.new-games h2 {
+#new-games h2 {
     font-size: 2rem;
 }
 
-
-section.explore h2 {
-    font-size: 2rem;
+#new-games img {
+    cursor: pointer;
 }
 
-section.explore p {
+/* *--EXPLORE SECTION--* */
+
+#explore p {
     font-size: 1.4rem;
     line-height: 1.2;
     color: rgb(104, 104, 104);
     font-weight: 500;
 }
 
-section.ps-plus .btn {
-    background-color: #D9DADC;
-    color: #2D64E5;
-    font-weight: 500;
-}
+/* *--PS PLUS SECTION--* */
 
-section.ps-plus {
+#ps-plus {
     background-color: #BEBCBB;
     height: 300px;
 }
 
-section.ps-plus .ps-plus-logo {
+#ps-plus .ps-plus-logo {
     width: 65%;
 }
 
-section.ps-now {
-    background-color: #161C3B;
-}
+/* *--PS STORE SECTION--* */
 
-section.ps-store h2 {
+#ps-store h2 {
     font-size: 2.5rem;
 }
 
-section.ps-store p {
+#ps-store p {
     font-size: 1.5rem;
     line-height: 1;
     color: rgb(104, 104, 104);
 }
 
-section.ps-now img {
+/* *--PS NOW SECTION--* */
+
+#ps-now img {
     width: 65%;
 }
 
-section.social h2 {
+#ps-now {
+    background-color: #161C3B;
+    height: 300px;
+}
+
+/* *--SOCIAL SECTION--* */
+
+#social{
+    height: 350px;
+}
+
+.r2{
     font-size: 2rem;
 }
+
+            /* *--FOOTER--* */
+/* *MI SONO PERMESSO TI RITOCCARE IL FOOTER CAMBIANDO I LINK DELLE LISTE* */
 
 footer {
     background-color: #00439C;
